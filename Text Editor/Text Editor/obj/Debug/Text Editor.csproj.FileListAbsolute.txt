@@ -1,0 +1,15 @@
+D:\Text Editor\Text Editor\obj\Debug\MainWindow.g.cs
+D:\Text Editor\Text Editor\obj\Debug\App.g.cs
+D:\Text Editor\Text Editor\obj\Debug\Text Editor_MarkupCompile.cache
+D:\Text Editor\Text Editor\obj\Debug\Text Editor_MarkupCompile.lref
+D:\Text Editor\Text Editor\bin\Debug\Text Editor.exe.config
+D:\Text Editor\Text Editor\bin\Debug\Text Editor.exe
+D:\Text Editor\Text Editor\bin\Debug\Text Editor.pdb
+D:\Text Editor\Text Editor\obj\Debug\MainWindow.baml
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.g.resources
+D:\Text Editor\Text Editor\obj\Debug\Text_Editor.Properties.Resources.resources
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.GenerateResource.cache
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.CoreCompileInputs.cache
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.exe
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.pdb
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.csprojAssemblyReference.cache

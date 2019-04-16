@@ -1,0 +1,82 @@
+﻿<Window x:Class="Text_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_Editor"
+        mc:Ignorable="d"
+        Title="Rich Text Box" Height="450" Width="800"
+        Name="Main_Window"
+        Closing="Main_Window_Closing">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" Executed="New_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="Exit_Executed"/>
+    </Window.CommandBindings>
+    <StackPanel Name="Menu">
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Command="ApplicationCommands.New"/>
+                <MenuItem Header="_Open" Command="ApplicationCommands.Open"/>
+                <MenuItem Header="_Save" Command="ApplicationCommands.Save"/>
+                <Separator/>
+                <MenuItem Header="_Exit" Command="ApplicationCommands.Close"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Copy" Command="Copy"/>
+                <MenuItem Header="_Cut" Command="Cut"/>
+                <MenuItem Header="_Paste" Command="Paste"/>
+                <Separator/>
+                <MenuItem Header="_Bold" Command="EditingCommands.ToggleBold"/>
+                <MenuItem Header="_Italic" Command="EditingCommands.ToggleItalic"/>
+                <MenuItem Header="_Underline" Command="EditingCommands.ToggleUnderline"/>
+            </MenuItem>
+        </Menu>
+        <ToolBar ToolBarTray.IsLocked="True" Loaded="Toolbar_Loaded">
+            <Button Command="ApplicationCommands.New">
+                <Image Source="Images/New.png" Width="16" Height="16"/>
+            </Button>
+            <Button Command="ApplicationCommands.Open">
+                <Image Source="Images/Folder.png" Width="16" Height="16"/>
+            </Button>
+            <Button Command="ApplicationCommands.Save">
+                <Image Source="Images/Disk.png" Width="16" Height="16"/>
+            </Button>
+            <Separator/>
+            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold">
+                <Image Source="Images/Bold.png" Width="16" Height="16"/>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic">
+                <Image Source="Images/Italic.png" Width="16" Height="16"/>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline">
+                <Image Source="Images/Underline.png" Width="16" Height="16"/>
+            </ToggleButton>
+            <Separator/>
+            <Button Command="Cut">
+                <Image Source="Images/Cut.png" Width="16" Height="16"/>
+            </Button>
+            <Button Command="Copy">
+                <Image Source="Images/Copy.png" Width="16" Height="16"/>
+            </Button>
+            <Button Command="Paste">
+                <Image Source="Images/Paste.png" Width="16" Height="16"/>
+            </Button>
+            <Separator/>
+            <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="CmbFontFamily_SelectionChanged"/>
+            <ComboBox Name="cmbFontSize" Width="50" SelectionChanged="CmbFontSize_SelectionChanged"/>
+        </ToolBar>
+        <StackPanel Name="Content" VerticalAlignment="Top" Background="Gray" Margin="0,0,0.333,0" Height="{Binding ElementName=Main_Window, Path=ActualHeight}">
+            <Canvas Name="myCanvas" Width="700" Height="550" Margin="0,25,0,0">
+
+                <RichTextBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="rtbEditor" Background="GhostWhite" Width="700" Height="{Binding ElementName=myCanvas, Path=ActualHeight}"></RichTextBox>
+
+            </Canvas>
+
+        </StackPanel>
+
+
+
+    </StackPanel>
+</Window>
