@@ -13,3 +13,23 @@ D:\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.CoreCompileInputs.cache
 D:\Text Editor\Text Editor\obj\Debug\Text Editor.exe
 D:\Text Editor\Text Editor\obj\Debug\Text Editor.pdb
 D:\Text Editor\Text Editor\obj\Debug\Text Editor.csprojAssemblyReference.cache
+D:\Text Editor\Text Editor\bin\Debug\Splat.dll
+D:\Text Editor\Text Editor\bin\Debug\Splat.xml
+D:\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.CopyComplete
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\MainWindow.g.cs
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\App.g.cs
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor_MarkupCompile.cache
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor_MarkupCompile.lref
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor.exe
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor.pdb
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\bin\Debug\Text Editor.exe.config
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\bin\Debug\Text Editor.exe
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\bin\Debug\Text Editor.pdb
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\bin\Debug\Splat.dll
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\bin\Debug\Splat.xml
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\MainWindow.baml
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor.g.resources
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text_Editor.Properties.Resources.resources
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.GenerateResource.cache
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.CoreCompileInputs.cache
+C:\Users\kcoll\Desktop\Text Editor\Text Editor\obj\Debug\Text Editor.csproj.CopyComplete

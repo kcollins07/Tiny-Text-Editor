@@ -14,6 +14,7 @@
         <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed"/>
         <CommandBinding Command="ApplicationCommands.Close" Executed="Exit_Executed"/>
     </Window.CommandBindings>
+
     <StackPanel Name="Menu">
         <Menu>
             <MenuItem Header="_File">
@@ -66,17 +67,27 @@
             <Separator/>
             <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="CmbFontFamily_SelectionChanged"/>
             <ComboBox Name="cmbFontSize" Width="50" SelectionChanged="CmbFontSize_SelectionChanged"/>
+            <Separator/>
+            <Button Name="btnFontColor" Click="BtnFontColor_Click" >
+                <Image Source="Images/FontColor.png" Width="16" Height="16"/>
+            </Button>
+            <Rectangle Width="16" Height="16" Fill="Black" Name="Color"/>
+            <Button Name="btnHighlightColor" Click="BtnHighlightColor_Click">
+                <Image Source="Images/highlightColor.png" Width="16" Height="16"/>
+                <!--Text Highlight Color by iconsmind.com from the Noun Project-->
+            </Button>
+            <Rectangle Name="highlightColor" Width="16" Height="16" Fill="Black"/>
+
         </ToolBar>
+
         <StackPanel Name="Content" VerticalAlignment="Top" Background="Gray" Margin="0,0,0.333,0" Height="{Binding ElementName=Main_Window, Path=ActualHeight}">
             <Canvas Name="myCanvas" Width="700" Height="550" Margin="0,25,0,0">
 
-                <RichTextBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="rtbEditor" Background="GhostWhite" Width="700" Height="{Binding ElementName=myCanvas, Path=ActualHeight}"></RichTextBox>
+                <RichTextBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="rtbEditor" Background="GhostWhite" Width="700" Height="{Binding ElementName=myCanvas, Path=ActualHeight}" Loaded="rtbEditor_SelectionChanged" TextChanged="RtbEditor_TextChanged" />
 
             </Canvas>
 
         </StackPanel>
-
-
 
     </StackPanel>
 </Window>
